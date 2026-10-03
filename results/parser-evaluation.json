@@ -1,6 +1,6 @@
 {
   "schema": "formproof.parser-evaluation.v1",
-  "timestamp": "2026-10-03T01:30:38.048Z",
+  "timestamp": "2026-10-03T02:20:10.945Z",
   "scope": "three original synthetic English text resumes; two labeled and one conventional section layout; no real resume benchmark",
   "expected": 31,
   "proposed": 31,

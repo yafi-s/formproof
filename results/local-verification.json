@@ -1,7 +1,7 @@
 {
   "schema": "portfolio.local-verification.v1",
   "project": "formproof",
-  "timestamp": "2026-10-03T02:00:37Z",
+  "timestamp": "2026-10-03T02:21:01Z",
   "environment": {
     "python": "3.12.10",
     "platform": "Windows-11-10.0.26200-SP0"
@@ -11,37 +11,37 @@
     {
       "name": "formproof-setup",
       "exit_code": 0,
-      "elapsed_seconds": 0.6406992000001992
-    },
-    {
-      "name": "formproof-importer",
-      "exit_code": 0,
-      "elapsed_seconds": 0.37678800000048795
-    },
-    {
-      "name": "formproof-parser-evaluation",
-      "exit_code": 0,
-      "elapsed_seconds": 0.065306800000144
-    },
-    {
-      "name": "formproof-field-evaluation",
-      "exit_code": 0,
-      "elapsed_seconds": 0.06111259999943286
+      "elapsed_seconds": 1.2009652999986429
     },
     {
       "name": "formproof-core",
       "exit_code": 0,
-      "elapsed_seconds": 0.4306756000005407
+      "elapsed_seconds": 0.7573980999986816
     },
     {
-      "name": "formproof-demo",
+      "name": "formproof-importer",
       "exit_code": 0,
-      "elapsed_seconds": 2.6385685999994166
+      "elapsed_seconds": 0.9546207999992475
+    },
+    {
+      "name": "formproof-parser-evaluation",
+      "exit_code": 0,
+      "elapsed_seconds": 0.10030320000078063
+    },
+    {
+      "name": "formproof-field-evaluation",
+      "exit_code": 0,
+      "elapsed_seconds": 0.09929729999930714
     },
     {
       "name": "formproof-browser",
       "exit_code": 0,
-      "elapsed_seconds": 37.90034569999989
+      "elapsed_seconds": 37.274210600000515
+    },
+    {
+      "name": "formproof-demo",
+      "exit_code": 0,
+      "elapsed_seconds": 2.9885897999993176
     }
   ],
   "scope": "synthetic local workloads; no production usage or external application submission",
