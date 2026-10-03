@@ -231,7 +231,7 @@ def run():
             assert 'Suggested version' in ui.locator('#ranking').inner_text()
             ui.locator('#confirmResume').click()
             ui.get_by_text('Version selected. Attach the original resume file manually.').wait_for()
-            ui.locator('summary').click()
+            ui.locator('#manualFact > summary').click()
             ui.locator('#factKey').select_option('gender')
             ui.locator('#factValue').fill('Prefer not to say')
             ui.locator('#saveFact').click()
@@ -240,7 +240,7 @@ def run():
             assert 'Prefer not to say' not in vault and 'alex@example.invalid' not in vault
             ui.screenshot(path=str(output/'review-ui.png'), full_page=True)
             for key in ('city','degree'):
-                fact=ui.locator('#facts > .candidate').filter(has=ui.locator('strong',has_text=re.compile('^'+key+'$')))
+                fact=ui.locator('#facts > .candidate').filter(has=ui.locator(f'strong[data-key="{key}"]'))
                 fact.get_by_role('button',name='Verify & choose').first.click()
                 ui.get_by_text(f'2 resume versions · revision {5 if key=="city" else 6}').wait_for()
             ui.locator('#scan').click()
@@ -279,7 +279,7 @@ def run():
             ui.locator('#workspace').wait_for(state='visible')
             ui.evaluate("""() => {window.originalSet=chrome.storage.local.set;
                 chrome.storage.local.set=async value=>{await new Promise(resolve=>window.releaseStorage=resolve);await window.originalSet(value);};}""")
-            if not ui.locator('#factValue').is_visible():ui.locator('summary').click()
+            if not ui.locator('#factValue').is_visible():ui.locator('#manualFact > summary').click()
             ui.locator('#factKey').select_option('gender');ui.locator('#factValue').fill('Prefer not to say')
             ui.locator('#saveFact').click();ui.wait_for_function("typeof window.releaseStorage==='function'")
             ui.locator('#erase').click();ui.locator('#workspace').wait_for(state='hidden')
@@ -294,12 +294,12 @@ def run():
 
             ui.locator('#password').fill('synthetic passphrase 2026');ui.locator('#unlock').click()
             ui.locator('#workspace').wait_for(state='visible')
-            ui.evaluate("""() => {window.originalText=File.prototype.text;File.prototype.text=async function(){
+            ui.evaluate("""() => {window.originalText=File.prototype.arrayBuffer;File.prototype.arrayBuffer=async function(){
                 await new Promise(resolve=>window.releaseImport=resolve);const text=await window.originalText.call(this);window.importReturned=true;return text;};}""")
             ui.locator('#files').set_input_files(str(ROOT/'fixtures/backend.txt'));ui.wait_for_function("typeof window.releaseImport==='function'")
             ui.locator('#erase').click();ui.get_by_text('Local profile deleted. Original files are unchanged.').wait_for()
             ui.evaluate('() => {window.releaseImport();}');ui.wait_for_function('window.importReturned')
-            ui.evaluate('async () => {await new Promise(resolve=>setTimeout(resolve,20));File.prototype.text=window.originalText;}')
+            ui.evaluate('async () => {await new Promise(resolve=>setTimeout(resolve,20));File.prototype.arrayBuffer=window.originalText;}')
             assert ui.evaluate('window.mockVault') is None and ui.locator('#facts').inner_text()==''
             assert ui.locator('#status').inner_text()=='Local profile deleted. Original files are unchanged.'
             checks.append('delayed resume import cannot repopulate profile, vault or status after deletion')

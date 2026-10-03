@@ -2,7 +2,8 @@
 
 ```mermaid
 flowchart LR
-  Files[Local resume text / PDF importer] --> Proposals[Unverified source-backed proposals]
+  Files[Local PDF / DOCX / text upload] --> Worker[Bounded local parser workers]
+  Worker --> Proposals[Unverified source-backed proposals]
   Proposals --> Conflict[Conflict detection and explicit choice]
   User[User-entered facts] --> Conflict
   Conflict --> Vault[Passphrase-encrypted local profile]
@@ -29,6 +30,14 @@ Lock and deletion synchronously fence the session generation, disable mutation c
 
 The page is untrusted input, not an instruction source. Prompt-like labels are strings and unknown labels abstain. DOM rendering uses `textContent`, never resume-derived HTML. Hostile ATS JavaScript can still observe any value placed in its own field; the user's destination approval is the boundary for that disclosure. The prototype does not claim to stop a page intentionally relabeling a normal field to disguise its purpose.
 
-The localhost demo uses an explicitly separate bridge and synthetic iframe to emulate the Chrome tab/scripting APIs. Tests use the same domain, scan and apply code. They validate control behavior but do not prove Manifest V3 lifecycle behavior, extension installation, cross-origin site integration or real ATS compatibility.
+`background.js` responds only to a user toolbar action, remembers tab/window IDs in session storage and opens/reuses a persistent companion window. The window uses Web Locks to block competing unlocked workspaces. The activeTab grant expires on cross-origin navigation; the user invokes the toolbar on the new destination. No host permission or always-on scanner is requested.
 
-Tradeoffs: conservative mapping sacrifices coverage to preserve abstention; explicit per-fact verification adds first-use work; popup memory avoids persisted unlock keys but requires unlocking again after close; PDF conversion stays out of the extension to avoid bundling a large document parser and accepts text-layer limitations. Native PDF.js import, reviewed site adapters, accessibility expansion and a consented human timing study are roadmap items.
+`upload.js` validates format/size, hashes original bytes and stages every file before importing any. PDF.js runs with an explicitly supplied nested local worker; no eval, remote font/cMap URLs or document JavaScript is used. It records extracted page-to-line provenance. Mammoth is used only for raw text, never HTML. Before Mammoth, `zip_guard.js` validates names/headers/entry counts/declared sizes and streams inflation with actual size and CRC checks. Workers are terminated on cancellation or a 15-second timeout. These bounds reduce resource exposure; they are not OS-level sandbox/heap guarantees or comprehensive hostile-document qualification.
+
+All mutations are serialized as private profile drafts. The 4 MiB serialized UTF-8 admission limit leaves headroom under extension storage quota after base64 encryption. Only a successfully persisted draft is published into the live profile. A failed save/import leaves both live and durable facts unchanged. Generation fencing still clears plaintext synchronously on lock/deletion and prevents delayed work from recreating a deleted vault.
+
+Native date/month conversion validates exact calendar values and bounds; it never infers a day. Label extraction removes embedded select/textarea content from wrapped labels. Effective option disabled state includes optgroups. Scan/apply both recheck visibility inherited from ancestors and native fieldset disabled state.
+
+The localhost demo uses an explicitly separate bridge and synthetic iframe to emulate Chrome APIs. A separate suite loads the exact packaged MV3 extension in a new isolated Chromium profile, invokes its actual toolbar action and verifies real storage/workers/scripting/grants against localhost only. It does not prove real employer ATS compatibility, personal Chrome/Edge installation or Web Store qualification.
+
+Tradeoffs: conservative mapping sacrifices coverage to preserve abstention; explicit per-fact verification adds first-use work; window memory requires unlocking again after close; local PDF/DOCX libraries increase package size and document parsing remains limited by text order. OCR, iframe/shadow-DOM traversal, custom widget/site adapters, attachment automation and a consented human timing study remain roadmap items.

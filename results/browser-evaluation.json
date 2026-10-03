@@ -1,6 +1,6 @@
 {
   "schema": "formproof.browser-evaluation.v1",
-  "timestamp": "2026-10-03T02:20:47Z",
+  "timestamp": "2026-10-03T03:51:58Z",
   "environment": {
     "python": "3.12.10",
     "browser": "148.0.7778.96",
@@ -32,25 +32,25 @@
         "trial": 0,
         "fields": 14,
         "typed_characters": 253,
-        "scripted_typing_ms": 9785.187900000892,
-        "plan_and_approved_apply_ms": 19.339899999977206,
-        "mechanical_entry_time_difference_ms": 9765.848000000915
+        "scripted_typing_ms": 9694.449499998882,
+        "plan_and_approved_apply_ms": 16.138599999976577,
+        "mechanical_entry_time_difference_ms": 9678.310899998905
       },
       {
         "trial": 1,
         "fields": 14,
         "typed_characters": 253,
-        "scripted_typing_ms": 9767.832100000305,
-        "plan_and_approved_apply_ms": 17.18550000077812,
-        "mechanical_entry_time_difference_ms": 9750.646599999527
+        "scripted_typing_ms": 9676.216800000475,
+        "plan_and_approved_apply_ms": 22.610999998505577,
+        "mechanical_entry_time_difference_ms": 9653.60580000197
       },
       {
         "trial": 2,
         "fields": 14,
         "typed_characters": 253,
-        "scripted_typing_ms": 9808.580599999914,
-        "plan_and_approved_apply_ms": 17.356500000460073,
-        "mechanical_entry_time_difference_ms": 9791.224099999454
+        "scripted_typing_ms": 9725.794899999528,
+        "plan_and_approved_apply_ms": 12.523800000053598,
+        "mechanical_entry_time_difference_ms": 9713.271099999474
       }
     ]
   },
@@ -552,8 +552,8 @@
       "status": "review",
       "reason": null,
       "actual": "Alex",
-      "planning_ms": 4.900000000372529,
-      "apply_ms": 5.599999999627471
+      "planning_ms": 2.800000000745058,
+      "apply_ms": 4.5
     },
     {
       "fixture": "native-contact",
@@ -563,8 +563,8 @@
       "status": "review",
       "reason": null,
       "actual": "Example",
-      "planning_ms": 4.900000000372529,
-      "apply_ms": 5.599999999627471
+      "planning_ms": 2.800000000745058,
+      "apply_ms": 4.5
     },
     {
       "fixture": "native-contact",
@@ -574,8 +574,8 @@
       "status": "review",
       "reason": null,
       "actual": "Alex Example",
-      "planning_ms": 4.900000000372529,
-      "apply_ms": 5.599999999627471
+      "planning_ms": 2.800000000745058,
+      "apply_ms": 4.5
     },
     {
       "fixture": "native-contact",
@@ -585,8 +585,8 @@
       "status": "review",
       "reason": null,
       "actual": "alex@example.invalid",
-      "planning_ms": 4.900000000372529,
-      "apply_ms": 5.599999999627471
+      "planning_ms": 2.800000000745058,
+      "apply_ms": 4.5
     },
     {
       "fixture": "native-contact",
@@ -596,8 +596,8 @@
       "status": "review",
       "reason": null,
       "actual": "+1 202 555 0104",
-      "planning_ms": 4.900000000372529,
-      "apply_ms": 5.599999999627471
+      "planning_ms": 2.800000000745058,
+      "apply_ms": 4.5
     },
     {
       "fixture": "native-contact",
@@ -607,8 +607,8 @@
       "status": "review",
       "reason": null,
       "actual": "Austin",
-      "planning_ms": 4.900000000372529,
-      "apply_ms": 5.599999999627471
+      "planning_ms": 2.800000000745058,
+      "apply_ms": 4.5
     },
     {
       "fixture": "native-contact",
@@ -618,8 +618,8 @@
       "status": "review",
       "reason": null,
       "actual": "https://www.linkedin.com/in/alex-example",
-      "planning_ms": 4.900000000372529,
-      "apply_ms": 5.599999999627471
+      "planning_ms": 2.800000000745058,
+      "apply_ms": 4.5
     },
     {
       "fixture": "native-contact",
@@ -629,8 +629,8 @@
       "status": "review",
       "reason": null,
       "actual": "https://github.com/example-alex",
-      "planning_ms": 4.900000000372529,
-      "apply_ms": 5.599999999627471
+      "planning_ms": 2.800000000745058,
+      "apply_ms": 4.5
     },
     {
       "fixture": "native-contact",
@@ -640,8 +640,8 @@
       "status": "review",
       "reason": null,
       "actual": "https://example.invalid/alex",
-      "planning_ms": 4.900000000372529,
-      "apply_ms": 5.599999999627471
+      "planning_ms": 2.800000000745058,
+      "apply_ms": 4.5
     },
     {
       "fixture": "native-contact",
@@ -651,8 +651,8 @@
       "status": "review",
       "reason": null,
       "actual": "Example State University",
-      "planning_ms": 4.900000000372529,
-      "apply_ms": 5.599999999627471
+      "planning_ms": 2.800000000745058,
+      "apply_ms": 4.5
     },
     {
       "fixture": "native-contact",
@@ -662,8 +662,8 @@
       "status": "review",
       "reason": null,
       "actual": "Bachelor of Science",
-      "planning_ms": 4.900000000372529,
-      "apply_ms": 5.599999999627471
+      "planning_ms": 2.800000000745058,
+      "apply_ms": 4.5
     },
     {
       "fixture": "native-contact",
@@ -673,8 +673,8 @@
       "status": "review",
       "reason": null,
       "actual": "May 2028",
-      "planning_ms": 4.900000000372529,
-      "apply_ms": 5.599999999627471
+      "planning_ms": 2.800000000745058,
+      "apply_ms": 4.5
     },
     {
       "fixture": "native-contact",
@@ -684,8 +684,8 @@
       "status": "review",
       "reason": null,
       "actual": "Example Labs",
-      "planning_ms": 4.900000000372529,
-      "apply_ms": 5.599999999627471
+      "planning_ms": 2.800000000745058,
+      "apply_ms": 4.5
     },
     {
       "fixture": "native-contact",
@@ -695,8 +695,8 @@
       "status": "review",
       "reason": null,
       "actual": "Software Engineering Intern",
-      "planning_ms": 4.900000000372529,
-      "apply_ms": 5.599999999627471
+      "planning_ms": 2.800000000745058,
+      "apply_ms": 4.5
     },
     {
       "fixture": "native-contact",
@@ -706,8 +706,8 @@
       "status": "abstain",
       "reason": "unknown or narrative question",
       "actual": "",
-      "planning_ms": 4.900000000372529,
-      "apply_ms": 5.599999999627471
+      "planning_ms": 2.800000000745058,
+      "apply_ms": 4.5
     },
     {
       "fixture": "native-contact",
@@ -717,8 +717,8 @@
       "status": "abstain",
       "reason": "unknown or narrative question",
       "actual": "",
-      "planning_ms": 4.900000000372529,
-      "apply_ms": 5.599999999627471
+      "planning_ms": 2.800000000745058,
+      "apply_ms": 4.5
     },
     {
       "fixture": "semantic-labels",
@@ -728,8 +728,8 @@
       "status": "review",
       "reason": null,
       "actual": "Alex",
-      "planning_ms": 2.099999999627471,
-      "apply_ms": 1.099999999627471
+      "planning_ms": 1.5,
+      "apply_ms": 1
     },
     {
       "fixture": "semantic-labels",
@@ -739,8 +739,8 @@
       "status": "review",
       "reason": null,
       "actual": "Example",
-      "planning_ms": 2.099999999627471,
-      "apply_ms": 1.099999999627471
+      "planning_ms": 1.5,
+      "apply_ms": 1
     },
     {
       "fixture": "semantic-labels",
@@ -750,8 +750,8 @@
       "status": "review",
       "reason": null,
       "actual": "alex@example.invalid",
-      "planning_ms": 2.099999999627471,
-      "apply_ms": 1.099999999627471
+      "planning_ms": 1.5,
+      "apply_ms": 1
     },
     {
       "fixture": "semantic-labels",
@@ -761,8 +761,8 @@
       "status": "review",
       "reason": null,
       "actual": "+1 202 555 0104",
-      "planning_ms": 2.099999999627471,
-      "apply_ms": 1.099999999627471
+      "planning_ms": 1.5,
+      "apply_ms": 1
     },
     {
       "fixture": "semantic-labels",
@@ -772,8 +772,8 @@
       "status": "review",
       "reason": null,
       "actual": "alex@example.invalid",
-      "planning_ms": 2.099999999627471,
-      "apply_ms": 1.099999999627471
+      "planning_ms": 1.5,
+      "apply_ms": 1
     },
     {
       "fixture": "semantic-labels",
@@ -783,8 +783,8 @@
       "status": "abstain",
       "reason": "label/autocomplete conflict",
       "actual": "",
-      "planning_ms": 2.099999999627471,
-      "apply_ms": 1.099999999627471
+      "planning_ms": 1.5,
+      "apply_ms": 1
     },
     {
       "fixture": "semantic-labels",
@@ -794,8 +794,8 @@
       "status": "abstain",
       "reason": "unrecognized sensitive wording",
       "actual": "",
-      "planning_ms": 2.099999999627471,
-      "apply_ms": 1.099999999627471
+      "planning_ms": 1.5,
+      "apply_ms": 1
     },
     {
       "fixture": "semantic-labels",
@@ -805,8 +805,8 @@
       "status": "review",
       "reason": null,
       "actual": "+1 202 555 0104",
-      "planning_ms": 2.099999999627471,
-      "apply_ms": 1.099999999627471
+      "planning_ms": 1.5,
+      "apply_ms": 1
     },
     {
       "fixture": "semantic-labels",
@@ -816,8 +816,8 @@
       "status": "review",
       "reason": null,
       "actual": "Example State University",
-      "planning_ms": 2.099999999627471,
-      "apply_ms": 1.099999999627471
+      "planning_ms": 1.5,
+      "apply_ms": 1
     },
     {
       "fixture": "semantic-labels",
@@ -827,8 +827,8 @@
       "status": "abstain",
       "reason": "unknown or narrative question",
       "actual": "",
-      "planning_ms": 2.099999999627471,
-      "apply_ms": 1.099999999627471
+      "planning_ms": 1.5,
+      "apply_ms": 1
     },
     {
       "fixture": "choices",
@@ -838,8 +838,8 @@
       "status": "review",
       "reason": null,
       "actual": "austin",
-      "planning_ms": 1.700000001117587,
-      "apply_ms": 1.099999999627471
+      "planning_ms": 1.200000001117587,
+      "apply_ms": 1.800000000745058
     },
     {
       "fixture": "choices",
@@ -849,8 +849,8 @@
       "status": "review",
       "reason": null,
       "actual": "bs",
-      "planning_ms": 1.700000001117587,
-      "apply_ms": 1.099999999627471
+      "planning_ms": 1.200000001117587,
+      "apply_ms": 1.800000000745058
     },
     {
       "fixture": "choices",
@@ -860,8 +860,8 @@
       "status": "sensitive-review",
       "reason": null,
       "actual": "na",
-      "planning_ms": 1.700000001117587,
-      "apply_ms": 1.099999999627471
+      "planning_ms": 1.200000001117587,
+      "apply_ms": 1.800000000745058
     },
     {
       "fixture": "choices",
@@ -871,8 +871,8 @@
       "status": "sensitive-review",
       "reason": null,
       "actual": "synthetic",
-      "planning_ms": 1.700000001117587,
-      "apply_ms": 1.099999999627471
+      "planning_ms": 1.200000001117587,
+      "apply_ms": 1.800000000745058
     },
     {
       "fixture": "choices",
@@ -882,8 +882,8 @@
       "status": "sensitive-review",
       "reason": null,
       "actual": "na",
-      "planning_ms": 1.700000001117587,
-      "apply_ms": 1.099999999627471
+      "planning_ms": 1.200000001117587,
+      "apply_ms": 1.800000000745058
     },
     {
       "fixture": "choices",
@@ -893,8 +893,8 @@
       "status": "sensitive-review",
       "reason": null,
       "actual": "no",
-      "planning_ms": 1.700000001117587,
-      "apply_ms": 1.099999999627471
+      "planning_ms": 1.200000001117587,
+      "apply_ms": 1.800000000745058
     },
     {
       "fixture": "choices",
@@ -904,8 +904,8 @@
       "status": "abstain",
       "reason": "ambiguous options",
       "actual": "",
-      "planning_ms": 1.700000001117587,
-      "apply_ms": 1.099999999627471
+      "planning_ms": 1.200000001117587,
+      "apply_ms": 1.800000000745058
     },
     {
       "fixture": "choices",
@@ -915,8 +915,8 @@
       "status": "abstain",
       "reason": "no exact option match",
       "actual": "",
-      "planning_ms": 1.700000001117587,
-      "apply_ms": 1.099999999627471
+      "planning_ms": 1.200000001117587,
+      "apply_ms": 1.800000000745058
     },
     {
       "fixture": "radio-and-safety",
@@ -926,8 +926,8 @@
       "status": "sensitive-review",
       "reason": null,
       "actual": "y",
-      "planning_ms": 1.599999999627471,
-      "apply_ms": 1.099999999627471
+      "planning_ms": 0.8999999985098839,
+      "apply_ms": 0.5
     },
     {
       "fixture": "radio-and-safety",
@@ -937,8 +937,8 @@
       "status": "sensitive-review",
       "reason": null,
       "actual": "na",
-      "planning_ms": 1.599999999627471,
-      "apply_ms": 1.099999999627471
+      "planning_ms": 0.8999999985098839,
+      "apply_ms": 0.5
     },
     {
       "fixture": "radio-and-safety",
@@ -948,8 +948,8 @@
       "status": "abstain",
       "reason": "already filled",
       "actual": "keep@example.invalid",
-      "planning_ms": 1.599999999627471,
-      "apply_ms": 1.099999999627471
+      "planning_ms": 0.8999999985098839,
+      "apply_ms": 0.5
     },
     {
       "fixture": "radio-and-safety",
@@ -959,8 +959,8 @@
       "status": "abstain",
       "reason": "disabled or read-only",
       "actual": "",
-      "planning_ms": 1.599999999627471,
-      "apply_ms": 1.099999999627471
+      "planning_ms": 0.8999999985098839,
+      "apply_ms": 0.5
     },
     {
       "fixture": "radio-and-safety",
@@ -970,8 +970,8 @@
       "status": "abstain",
       "reason": "disabled or read-only",
       "actual": "",
-      "planning_ms": 1.599999999627471,
-      "apply_ms": 1.099999999627471
+      "planning_ms": 0.8999999985098839,
+      "apply_ms": 0.5
     },
     {
       "fixture": "radio-and-safety",
@@ -981,8 +981,8 @@
       "status": "abstain",
       "reason": "hidden field",
       "actual": "",
-      "planning_ms": 1.599999999627471,
-      "apply_ms": 1.099999999627471
+      "planning_ms": 0.8999999985098839,
+      "apply_ms": 0.5
     },
     {
       "fixture": "radio-and-safety",
@@ -992,8 +992,8 @@
       "status": "abstain",
       "reason": "unsupported control",
       "actual": "",
-      "planning_ms": 1.599999999627471,
-      "apply_ms": 1.099999999627471
+      "planning_ms": 0.8999999985098839,
+      "apply_ms": 0.5
     },
     {
       "fixture": "radio-and-safety",
@@ -1003,8 +1003,8 @@
       "status": "abstain",
       "reason": "unsupported control",
       "actual": "",
-      "planning_ms": 1.599999999627471,
-      "apply_ms": 1.099999999627471
+      "planning_ms": 0.8999999985098839,
+      "apply_ms": 0.5
     },
     {
       "fixture": "radio-and-safety",
@@ -1014,8 +1014,8 @@
       "status": "abstain",
       "reason": "unsupported control",
       "actual": "",
-      "planning_ms": 1.599999999627471,
-      "apply_ms": 1.099999999627471
+      "planning_ms": 0.8999999985098839,
+      "apply_ms": 0.5
     },
     {
       "fixture": "radio-and-safety",
@@ -1023,10 +1023,10 @@
       "truth_key": null,
       "expected": "",
       "status": "abstain",
-      "reason": "unsupported control",
+      "reason": "missing fact",
       "actual": "",
-      "planning_ms": 1.599999999627471,
-      "apply_ms": 1.099999999627471
+      "planning_ms": 0.8999999985098839,
+      "apply_ms": 0.5
     },
     {
       "fixture": "heldout-wording",
@@ -1036,8 +1036,8 @@
       "status": "abstain",
       "reason": "unknown or narrative question",
       "actual": "",
-      "planning_ms": 1.200000001117587,
-      "apply_ms": 0.6999999992549419
+      "planning_ms": 1.099999999627471,
+      "apply_ms": 0.7000000011175871
     },
     {
       "fixture": "heldout-wording",
@@ -1047,8 +1047,8 @@
       "status": "abstain",
       "reason": "unknown or narrative question",
       "actual": "",
-      "planning_ms": 1.200000001117587,
-      "apply_ms": 0.6999999992549419
+      "planning_ms": 1.099999999627471,
+      "apply_ms": 0.7000000011175871
     },
     {
       "fixture": "heldout-wording",
@@ -1058,8 +1058,8 @@
       "status": "abstain",
       "reason": "unknown or narrative question",
       "actual": "",
-      "planning_ms": 1.200000001117587,
-      "apply_ms": 0.6999999992549419
+      "planning_ms": 1.099999999627471,
+      "apply_ms": 0.7000000011175871
     },
     {
       "fixture": "heldout-wording",
@@ -1069,8 +1069,8 @@
       "status": "abstain",
       "reason": "unknown or narrative question",
       "actual": "",
-      "planning_ms": 1.200000001117587,
-      "apply_ms": 0.6999999992549419
+      "planning_ms": 1.099999999627471,
+      "apply_ms": 0.7000000011175871
     },
     {
       "fixture": "heldout-wording",
@@ -1080,8 +1080,8 @@
       "status": "abstain",
       "reason": "unknown or narrative question",
       "actual": "",
-      "planning_ms": 1.200000001117587,
-      "apply_ms": 0.6999999992549419
+      "planning_ms": 1.099999999627471,
+      "apply_ms": 0.7000000011175871
     },
     {
       "fixture": "heldout-wording",
@@ -1091,8 +1091,8 @@
       "status": "abstain",
       "reason": "unrecognized sensitive wording",
       "actual": "",
-      "planning_ms": 1.200000001117587,
-      "apply_ms": 0.6999999992549419
+      "planning_ms": 1.099999999627471,
+      "apply_ms": 0.7000000011175871
     },
     {
       "fixture": "heldout-wording",
@@ -1102,8 +1102,8 @@
       "status": "sensitive-review",
       "reason": null,
       "actual": "Synthetic country",
-      "planning_ms": 1.200000001117587,
-      "apply_ms": 0.6999999992549419
+      "planning_ms": 1.099999999627471,
+      "apply_ms": 0.7000000011175871
     },
     {
       "fixture": "heldout-wording",
@@ -1113,8 +1113,8 @@
       "status": "review",
       "reason": null,
       "actual": "Alex Example",
-      "planning_ms": 1.200000001117587,
-      "apply_ms": 0.6999999992549419
+      "planning_ms": 1.099999999627471,
+      "apply_ms": 0.7000000011175871
     },
     {
       "fixture": "heldout-wording",
@@ -1124,8 +1124,8 @@
       "status": "review",
       "reason": null,
       "actual": "https://example.invalid/alex",
-      "planning_ms": 1.200000001117587,
-      "apply_ms": 0.6999999992549419
+      "planning_ms": 1.099999999627471,
+      "apply_ms": 0.7000000011175871
     },
     {
       "fixture": "heldout-wording",
@@ -1135,8 +1135,8 @@
       "status": "abstain",
       "reason": "unknown or narrative question",
       "actual": "",
-      "planning_ms": 1.200000001117587,
-      "apply_ms": 0.6999999992549419
+      "planning_ms": 1.099999999627471,
+      "apply_ms": 0.7000000011175871
     },
     {
       "fixture": "heldout-wording",
@@ -1146,8 +1146,8 @@
       "status": "review",
       "reason": null,
       "actual": "https://example.invalid/alex",
-      "planning_ms": 1.200000001117587,
-      "apply_ms": 0.6999999992549419
+      "planning_ms": 1.099999999627471,
+      "apply_ms": 0.7000000011175871
     },
     {
       "fixture": "heldout-wording",
@@ -1157,8 +1157,8 @@
       "status": "abstain",
       "reason": "unknown or narrative question",
       "actual": "",
-      "planning_ms": 1.200000001117587,
-      "apply_ms": 0.6999999992549419
+      "planning_ms": 1.099999999627471,
+      "apply_ms": 0.7000000011175871
     },
     {
       "fixture": "untrusted-text",
@@ -1168,8 +1168,8 @@
       "status": "abstain",
       "reason": "unknown or narrative question",
       "actual": "",
-      "planning_ms": 0.6999999992549419,
-      "apply_ms": 0.599999999627471
+      "planning_ms": 0.7999999988824129,
+      "apply_ms": 0.5
     },
     {
       "fixture": "untrusted-text",
@@ -1179,8 +1179,8 @@
       "status": "abstain",
       "reason": "unknown or narrative question",
       "actual": "",
-      "planning_ms": 0.6999999992549419,
-      "apply_ms": 0.599999999627471
+      "planning_ms": 0.7999999988824129,
+      "apply_ms": 0.5
     },
     {
       "fixture": "untrusted-text",
@@ -1190,8 +1190,8 @@
       "status": "review",
       "reason": null,
       "actual": "alex@example.invalid",
-      "planning_ms": 0.6999999992549419,
-      "apply_ms": 0.599999999627471
+      "planning_ms": 0.7999999988824129,
+      "apply_ms": 0.5
     },
     {
       "fixture": "untrusted-text",
@@ -1201,8 +1201,8 @@
       "status": "abstain",
       "reason": "missing fact",
       "actual": "",
-      "planning_ms": 0.6999999992549419,
-      "apply_ms": 0.599999999627471
+      "planning_ms": 0.7999999988824129,
+      "apply_ms": 0.5
     },
     {
       "fixture": "untrusted-text",
@@ -1212,8 +1212,8 @@
       "status": "abstain",
       "reason": "missing fact",
       "actual": "",
-      "planning_ms": 0.6999999992549419,
-      "apply_ms": 0.599999999627471
+      "planning_ms": 0.7999999988824129,
+      "apply_ms": 0.5
     },
     {
       "fixture": "untrusted-text",
@@ -1223,8 +1223,8 @@
       "status": "abstain",
       "reason": "missing fact",
       "actual": "",
-      "planning_ms": 0.6999999992549419,
-      "apply_ms": 0.599999999627471
+      "planning_ms": 0.7999999988824129,
+      "apply_ms": 0.5
     },
     {
       "fixture": "untrusted-text",
@@ -1234,8 +1234,8 @@
       "status": "review",
       "reason": null,
       "actual": "Example Labs",
-      "planning_ms": 0.6999999992549419,
-      "apply_ms": 0.599999999627471
+      "planning_ms": 0.7999999988824129,
+      "apply_ms": 0.5
     },
     {
       "fixture": "untrusted-text",
@@ -1245,8 +1245,8 @@
       "status": "review",
       "reason": null,
       "actual": "Austin",
-      "planning_ms": 0.6999999992549419,
-      "apply_ms": 0.599999999627471
+      "planning_ms": 0.7999999988824129,
+      "apply_ms": 0.5
     }
   ]
 }
