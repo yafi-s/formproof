@@ -1,0 +1,14 @@
+{
+  "schema": "formproof.demo-verification.v1",
+  "scope": "controlled localhost only; no extension installation",
+  "browser": "148.0.7778.96",
+  "checks": [
+    "real loopback demo server: import/verify/scan/fill writes only the controlled iframe",
+    "user fact HTML is rendered as inert text",
+    "server rejects non-asset reads and all POST uploads",
+    "canonical asset allowlist blocks encoded traversal for GET and HEAD",
+    "HEAD follows the same validated asset routing as GET",
+    "manifest has minimal user-invoked permissions and no network endpoint access",
+    "a failed storage write still permits complete local vault deletion"
+  ]
+}

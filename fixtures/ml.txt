@@ -1,0 +1,11 @@
+Name: Alex Example
+First Name: Alex
+Last Name: Example
+Email: alex.ml@example.invalid
+Phone: +1 202 555 0104
+City: Austin
+School: Example State University
+Degree: Bachelor of Science
+Graduation: May 2028
+Skills: Python, machine learning, retrieval, evaluation, embeddings, inference, PyTorch
+Project: Evaluated a local classifier on synthetic examples with held-out labels.

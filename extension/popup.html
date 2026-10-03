@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>FormProof</title><link rel="stylesheet" href="popup.css"></head><body>
+<header><span class="mark">FP</span><div><h1>FormProof</h1><p>Your facts. Your review. Your application.</p></div><span class="badge">LOCAL ONLY</span></header>
+<main>
+<section id="lockPanel"><h2>Unlock your local profile</h2><p>Use a passphrase of at least 12 characters. A new profile starts empty. The passphrase stays in memory while this panel is open.</p>
+<label>Passphrase<input id="password" type="password" autocomplete="off" minlength="12"></label><button id="unlock">Unlock / create profile</button>
+<p class="muted">There is no password recovery. Keep your original resumes.</p></section>
+<div id="workspace" hidden>
+<div class="toolbar"><span id="profileCount"></span><button class="secondary" id="lock">Lock</button><button class="danger" id="erase">Delete local profile</button></div>
+<section><h2>1 · Bring your resume versions</h2><p>Import text, Markdown, or a JSON bundle from the local PDF importer. Every extracted fact starts unverified.</p>
+<input id="files" type="file" accept=".txt,.md,.json" multiple><div id="resumes"></div>
+<label>Job description<textarea id="job" rows="3" placeholder="Paste a job description to compare your resume versions"></textarea></label>
+<button class="secondary" id="rank">Compare versions</button><div id="ranking"></div>
+<label>Resume to attach manually<select id="resumeChoice"><option value="">Choose a version</option></select></label><button class="secondary" id="confirmResume">Confirm chosen version</button></section>
+<section><h2>2 · Verify what you want to reuse</h2><p>Review the exact source. Conflicting versions require an explicit choice. We do not generate experience or application answers.</p><div id="facts"></div>
+<details><summary>Add or correct a fact</summary><label>Fact<select id="factKey"></select></label><label>Value<input id="factValue" maxlength="500"></label>
+<p class="muted">Demographic, citizenship and work-authorization facts come only from your own entry. They require a separate approval each time you fill them.</p>
+<button id="saveFact">Save my explicit answer</button></details></section>
+<section><h2>3 · Review this destination</h2><button id="scan">Inspect the active application page</button><p id="destination" class="destination"></p><div id="review"></div>
+<label class="check"><input id="sensitiveApproval" type="checkbox">I approve the selected sensitive answers for this exact destination, once.</label>
+<button id="apply" disabled>Fill selected fields</button><p class="muted">File attachments, custom widgets, checkboxes and narrative answers remain manual. FormProof never submits your application.</p></section>
+</div><p id="status" role="status" aria-live="polite"></p>
+</main><script type="module" src="popup.js"></script></body></html>

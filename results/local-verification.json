@@ -1,0 +1,86 @@
+{
+  "schema": "portfolio.local-verification.v1",
+  "project": "formproof",
+  "timestamp": "2026-10-03T02:00:37Z",
+  "environment": {
+    "python": "3.12.10",
+    "platform": "Windows-11-10.0.26200-SP0"
+  },
+  "all_local_checks_passed": true,
+  "checks": [
+    {
+      "name": "formproof-setup",
+      "exit_code": 0,
+      "elapsed_seconds": 0.6406992000001992
+    },
+    {
+      "name": "formproof-importer",
+      "exit_code": 0,
+      "elapsed_seconds": 0.37678800000048795
+    },
+    {
+      "name": "formproof-parser-evaluation",
+      "exit_code": 0,
+      "elapsed_seconds": 0.065306800000144
+    },
+    {
+      "name": "formproof-field-evaluation",
+      "exit_code": 0,
+      "elapsed_seconds": 0.06111259999943286
+    },
+    {
+      "name": "formproof-core",
+      "exit_code": 0,
+      "elapsed_seconds": 0.4306756000005407
+    },
+    {
+      "name": "formproof-demo",
+      "exit_code": 0,
+      "elapsed_seconds": 2.6385685999994166
+    },
+    {
+      "name": "formproof-browser",
+      "exit_code": 0,
+      "elapsed_seconds": 37.90034569999989
+    }
+  ],
+  "scope": "synthetic local workloads; no production usage or external application submission",
+  "source_sha256": {
+    "demo/bridge.js": "28bb0d4e51c850f7b0b096f9aea062970ddb75fdb845b7410a152f2ed6133d89",
+    "demo/demo.css": "382d55201e3e38b3c38663380ec5bb6ffdb6446b332517dedcae97bb3aae928e",
+    "demo/demo.js": "438d1fb677498df044fd6635f518218bc78a42064ab441751a979170b0ae69bc",
+    "demo/index.html": "397fb3e7038a8dc630dec70f98b1606247137dc90a7918e172fd45d9bdd6af75",
+    "extension/core.js": "83734fb1a849c40642baf70e7a0dd18ae9f99102f8c3d2316217c1e1b6c3e8b3",
+    "extension/manifest.json": "e31bc5998cd9d81169bcbafa8f8e6728781ddc94ebeb78e25f34754a71238183",
+    "extension/page.js": "d455e675df8f22f7ab683a93aff63f6fc587dc0f1bd2dea95df0a03db3845afa",
+    "extension/popup.css": "be3e254fe0eba3752ec178a2250ed1315249ec171c05866adb20eaf87249ccae",
+    "extension/popup.html": "e759ad549a7208c920bfced36fac3b25204c43850f950483e35434b761469633",
+    "extension/popup.js": "71a98b8b120ab0cd46a59ba644d80cba34a1e35728fa8a1bd02fd1d966554c38",
+    "extension/vault.js": "a69504f8650c7f1f9a517d65d3728551541d72da02b76ca5b9264e87d68a7cb8",
+    "fixtures/backend.txt": "de487b1ae5bd73932d58234a23b10cd929108538e1c3544e0002beeeebbf8bf0",
+    "fixtures/cases.json": "838a863a766aa63b2cc5f5ce7e3901d61113b8aa7de0c68ab3e1cb9e6d56c511",
+    "fixtures/ml.txt": "8dcee96edd1747a40c64e161cf8b83c696485263b0d73fe44d9153354e7e274a",
+    "fixtures/pages/choices.html": "43f16f49dbaab4a090830618b5c7bd1132bb05cefa677a7fda8397b0f97ea0d7",
+    "fixtures/pages/heldout-wording.html": "915e3b985b55eb8a91b8df7b2ccc8c67bc74ea765eaa3d3e9be5e5c4b99d3acb",
+    "fixtures/pages/native-contact.html": "6f80b4467f14ec8f1a28e5d62f98484c4da02ac5d66d1fc048c0249959061632",
+    "fixtures/pages/radio-and-safety.html": "9f0dd4cc53ad42e5460527b52404ed2f84592d1203ad90f9a11e80cdb77df311",
+    "fixtures/pages/semantic-labels.html": "c8dfc47980c5144113184590a4e2696bacce5d4a8ff89e1132ff0f54749a29f8",
+    "fixtures/pages/untrusted-text.html": "81447b6e7a9e11257cc9d8f6a58d0137ab13fc5cd172cb63fab66f097bfb67c9",
+    "fixtures/unlabeled.txt": "5671c7ae7f0534a813521f0a4781b4d667b3002637eb8965378297f97967017d",
+    "package.json": "fac1b76a41edd2edffafa0bfd4a77125da1e09eb9639161cf14a71be7dffc3fa",
+    "requirements-optional.txt": "6a6c4eeb2819f95ccb300e67027733742e609a52c84bded8ff34fd8e9f2130db",
+    "setup.ps1": "8e4e339d0e3f7cce717fb3675d620c39de29ea89d3d6f5a4ea04fd5201d97fd9",
+    "tests/browser_check.py": "13bd8e8206600c5a54c7a9f2758d2ec6ef8f5abfb4f5d517c4f57f063fdaac60",
+    "tests/core.test.mjs": "696aa5624d2db14e7e92130164f547155b02d45cccf2cd00b5572860167c4762",
+    "tests/demo_check.py": "6be49bf2b529f50c2e369e8a355e8a2c018b7d890a3442380de71e3ea53ec8f6",
+    "tests/evaluate.mjs": "0425cac2b7ef84ba9c463da93e2b6fce5627b05db804c6275ec915b671006439",
+    "tests/parser_evaluate.mjs": "5331e73c2b8cfba931a2482f887c4693322492a64a1e3f1e09b986fd375c3c42",
+    "tests/test_importer.py": "1424cfdc73c5255751a390725b5c362700c0f45bdcb3ef77a42893d1cfe920bc",
+    "tools/import_resume.py": "6b06d01d8a62bf108b40554060c84c4fbf21befdc6d45fc328a97c75b8ba5ca5",
+    "tools/serve_demo.py": "6a81091ca01b33ae336dc0e2cea3ed2b159bd2ad859726d911c93c61d3755a3d",
+    "verify.ps1": "264ba235f4a57a33f6cb3212aca8d1b5e133fa00af7a7244f8e91d5fc9fd0726"
+  },
+  "independent_review": "all original concrete reproductions closed; see docs/REVIEW.md",
+  "remote_ci_status": "not run; repository publication pending",
+  "extension_installed": false
+}

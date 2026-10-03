@@ -1,0 +1,11 @@
+Alex Example
+alex@example.invalid | +1 202-555-0104 | https://github.com/example-alex
+https://www.linkedin.com/in/alex-example
+EDUCATION
+Example State University | Austin, TX
+Bachelor of Science in Computer Science | Expected May 2028
+EXPERIENCE
+Example Labs | Software Engineering Intern | May 2026 - August 2026
+Built a synthetic workflow and documented test evidence.
+PROJECTS
+Local data processor | Python, SQL, SQLite

@@ -1,0 +1,6 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>FormProof controlled demo</title>
+<link rel="stylesheet" href="demo.css"></head><body><header><strong>FormProof · controlled local demo</strong><span>Synthetic ATS pages only. Extension is not installed.</span></header>
+<p>Unlock a profile in the left panel, import <code>fixtures/backend.txt</code>, verify facts, and inspect the mock application on the right. Use a test passphrase. File attachments and submission remain manual; the demo submit handler only counts prevented submissions.</p>
+<nav><button data-page="native-contact">Native contact</button><button data-page="choices">Select fields</button><button data-page="radio-and-safety">Radio & safety</button><button data-page="heldout-wording">Unsupported wording</button></nav>
+<main><iframe title="Copilot review" id="copilot" src="/extension/popup.html"></iframe><iframe title="Mock ATS application" id="application" src="/fixtures/pages/native-contact.html"></iframe></main>
+<script src="demo.js"></script></body></html>

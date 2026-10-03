@@ -1,0 +1,509 @@
+{
+  "schema": "formproof.parser-evaluation.v1",
+  "timestamp": "2026-10-03T01:30:38.048Z",
+  "scope": "three original synthetic English text resumes; two labeled and one conventional section layout; no real resume benchmark",
+  "expected": 31,
+  "proposed": 31,
+  "correct": 31,
+  "proposal_precision": 1,
+  "proposal_recall": 1,
+  "all_proposals_require_user_verification": true,
+  "rows": [
+    {
+      "fixture": "backend",
+      "key": "fullName",
+      "value": "Alex Example",
+      "expected": "Alex Example",
+      "correct": true,
+      "source": {
+        "kind": "resume",
+        "name": "backend.txt",
+        "sha256": "de487b1ae5bd73932d58234a23b10cd929108538e1c3544e0002beeeebbf8bf0",
+        "line": 1,
+        "excerpt": "Name: Alex Example"
+      },
+      "confidence": 0.99,
+      "verified": false
+    },
+    {
+      "fixture": "backend",
+      "key": "firstName",
+      "value": "Alex",
+      "expected": "Alex",
+      "correct": true,
+      "source": {
+        "kind": "resume",
+        "name": "backend.txt",
+        "sha256": "de487b1ae5bd73932d58234a23b10cd929108538e1c3544e0002beeeebbf8bf0",
+        "line": 2,
+        "excerpt": "First Name: Alex"
+      },
+      "confidence": 0.99,
+      "verified": false
+    },
+    {
+      "fixture": "backend",
+      "key": "lastName",
+      "value": "Example",
+      "expected": "Example",
+      "correct": true,
+      "source": {
+        "kind": "resume",
+        "name": "backend.txt",
+        "sha256": "de487b1ae5bd73932d58234a23b10cd929108538e1c3544e0002beeeebbf8bf0",
+        "line": 3,
+        "excerpt": "Last Name: Example"
+      },
+      "confidence": 0.99,
+      "verified": false
+    },
+    {
+      "fixture": "backend",
+      "key": "email",
+      "value": "alex@example.invalid",
+      "expected": "alex@example.invalid",
+      "correct": true,
+      "source": {
+        "kind": "resume",
+        "name": "backend.txt",
+        "sha256": "de487b1ae5bd73932d58234a23b10cd929108538e1c3544e0002beeeebbf8bf0",
+        "line": 4,
+        "excerpt": "Email: alex@example.invalid"
+      },
+      "confidence": 0.99,
+      "verified": false
+    },
+    {
+      "fixture": "backend",
+      "key": "phone",
+      "value": "+1 202 555 0104",
+      "expected": "+1 202 555 0104",
+      "correct": true,
+      "source": {
+        "kind": "resume",
+        "name": "backend.txt",
+        "sha256": "de487b1ae5bd73932d58234a23b10cd929108538e1c3544e0002beeeebbf8bf0",
+        "line": 5,
+        "excerpt": "Phone: +1 202 555 0104"
+      },
+      "confidence": 0.99,
+      "verified": false
+    },
+    {
+      "fixture": "backend",
+      "key": "city",
+      "value": "Austin",
+      "expected": "Austin",
+      "correct": true,
+      "source": {
+        "kind": "resume",
+        "name": "backend.txt",
+        "sha256": "de487b1ae5bd73932d58234a23b10cd929108538e1c3544e0002beeeebbf8bf0",
+        "line": 6,
+        "excerpt": "City: Austin"
+      },
+      "confidence": 0.99,
+      "verified": false
+    },
+    {
+      "fixture": "backend",
+      "key": "linkedin",
+      "value": "https://www.linkedin.com/in/alex-example",
+      "expected": "https://www.linkedin.com/in/alex-example",
+      "correct": true,
+      "source": {
+        "kind": "resume",
+        "name": "backend.txt",
+        "sha256": "de487b1ae5bd73932d58234a23b10cd929108538e1c3544e0002beeeebbf8bf0",
+        "line": 7,
+        "excerpt": "LinkedIn: https://www.linkedin.com/in/alex-example"
+      },
+      "confidence": 0.99,
+      "verified": false
+    },
+    {
+      "fixture": "backend",
+      "key": "github",
+      "value": "https://github.com/example-alex",
+      "expected": "https://github.com/example-alex",
+      "correct": true,
+      "source": {
+        "kind": "resume",
+        "name": "backend.txt",
+        "sha256": "de487b1ae5bd73932d58234a23b10cd929108538e1c3544e0002beeeebbf8bf0",
+        "line": 8,
+        "excerpt": "GitHub: https://github.com/example-alex"
+      },
+      "confidence": 0.99,
+      "verified": false
+    },
+    {
+      "fixture": "backend",
+      "key": "website",
+      "value": "https://example.invalid/alex",
+      "expected": "https://example.invalid/alex",
+      "correct": true,
+      "source": {
+        "kind": "resume",
+        "name": "backend.txt",
+        "sha256": "de487b1ae5bd73932d58234a23b10cd929108538e1c3544e0002beeeebbf8bf0",
+        "line": 9,
+        "excerpt": "Website: https://example.invalid/alex"
+      },
+      "confidence": 0.99,
+      "verified": false
+    },
+    {
+      "fixture": "backend",
+      "key": "school",
+      "value": "Example State University",
+      "expected": "Example State University",
+      "correct": true,
+      "source": {
+        "kind": "resume",
+        "name": "backend.txt",
+        "sha256": "de487b1ae5bd73932d58234a23b10cd929108538e1c3544e0002beeeebbf8bf0",
+        "line": 10,
+        "excerpt": "School: Example State University"
+      },
+      "confidence": 0.99,
+      "verified": false
+    },
+    {
+      "fixture": "backend",
+      "key": "degree",
+      "value": "Bachelor of Science",
+      "expected": "Bachelor of Science",
+      "correct": true,
+      "source": {
+        "kind": "resume",
+        "name": "backend.txt",
+        "sha256": "de487b1ae5bd73932d58234a23b10cd929108538e1c3544e0002beeeebbf8bf0",
+        "line": 11,
+        "excerpt": "Degree: Bachelor of Science"
+      },
+      "confidence": 0.99,
+      "verified": false
+    },
+    {
+      "fixture": "backend",
+      "key": "graduation",
+      "value": "May 2028",
+      "expected": "May 2028",
+      "correct": true,
+      "source": {
+        "kind": "resume",
+        "name": "backend.txt",
+        "sha256": "de487b1ae5bd73932d58234a23b10cd929108538e1c3544e0002beeeebbf8bf0",
+        "line": 12,
+        "excerpt": "Graduation: May 2028"
+      },
+      "confidence": 0.99,
+      "verified": false
+    },
+    {
+      "fixture": "backend",
+      "key": "currentEmployer",
+      "value": "Example Labs",
+      "expected": "Example Labs",
+      "correct": true,
+      "source": {
+        "kind": "resume",
+        "name": "backend.txt",
+        "sha256": "de487b1ae5bd73932d58234a23b10cd929108538e1c3544e0002beeeebbf8bf0",
+        "line": 13,
+        "excerpt": "Current Employer: Example Labs"
+      },
+      "confidence": 0.99,
+      "verified": false
+    },
+    {
+      "fixture": "backend",
+      "key": "currentTitle",
+      "value": "Software Engineering Intern",
+      "expected": "Software Engineering Intern",
+      "correct": true,
+      "source": {
+        "kind": "resume",
+        "name": "backend.txt",
+        "sha256": "de487b1ae5bd73932d58234a23b10cd929108538e1c3544e0002beeeebbf8bf0",
+        "line": 14,
+        "excerpt": "Current Title: Software Engineering Intern"
+      },
+      "confidence": 0.99,
+      "verified": false
+    },
+    {
+      "fixture": "ml",
+      "key": "fullName",
+      "value": "Alex Example",
+      "expected": "Alex Example",
+      "correct": true,
+      "source": {
+        "kind": "resume",
+        "name": "ml.txt",
+        "sha256": "8dcee96edd1747a40c64e161cf8b83c696485263b0d73fe44d9153354e7e274a",
+        "line": 1,
+        "excerpt": "Name: Alex Example"
+      },
+      "confidence": 0.99,
+      "verified": false
+    },
+    {
+      "fixture": "ml",
+      "key": "firstName",
+      "value": "Alex",
+      "expected": "Alex",
+      "correct": true,
+      "source": {
+        "kind": "resume",
+        "name": "ml.txt",
+        "sha256": "8dcee96edd1747a40c64e161cf8b83c696485263b0d73fe44d9153354e7e274a",
+        "line": 2,
+        "excerpt": "First Name: Alex"
+      },
+      "confidence": 0.99,
+      "verified": false
+    },
+    {
+      "fixture": "ml",
+      "key": "lastName",
+      "value": "Example",
+      "expected": "Example",
+      "correct": true,
+      "source": {
+        "kind": "resume",
+        "name": "ml.txt",
+        "sha256": "8dcee96edd1747a40c64e161cf8b83c696485263b0d73fe44d9153354e7e274a",
+        "line": 3,
+        "excerpt": "Last Name: Example"
+      },
+      "confidence": 0.99,
+      "verified": false
+    },
+    {
+      "fixture": "ml",
+      "key": "email",
+      "value": "alex.ml@example.invalid",
+      "expected": "alex.ml@example.invalid",
+      "correct": true,
+      "source": {
+        "kind": "resume",
+        "name": "ml.txt",
+        "sha256": "8dcee96edd1747a40c64e161cf8b83c696485263b0d73fe44d9153354e7e274a",
+        "line": 4,
+        "excerpt": "Email: alex.ml@example.invalid"
+      },
+      "confidence": 0.99,
+      "verified": false
+    },
+    {
+      "fixture": "ml",
+      "key": "phone",
+      "value": "+1 202 555 0104",
+      "expected": "+1 202 555 0104",
+      "correct": true,
+      "source": {
+        "kind": "resume",
+        "name": "ml.txt",
+        "sha256": "8dcee96edd1747a40c64e161cf8b83c696485263b0d73fe44d9153354e7e274a",
+        "line": 5,
+        "excerpt": "Phone: +1 202 555 0104"
+      },
+      "confidence": 0.99,
+      "verified": false
+    },
+    {
+      "fixture": "ml",
+      "key": "city",
+      "value": "Austin",
+      "expected": "Austin",
+      "correct": true,
+      "source": {
+        "kind": "resume",
+        "name": "ml.txt",
+        "sha256": "8dcee96edd1747a40c64e161cf8b83c696485263b0d73fe44d9153354e7e274a",
+        "line": 6,
+        "excerpt": "City: Austin"
+      },
+      "confidence": 0.99,
+      "verified": false
+    },
+    {
+      "fixture": "ml",
+      "key": "school",
+      "value": "Example State University",
+      "expected": "Example State University",
+      "correct": true,
+      "source": {
+        "kind": "resume",
+        "name": "ml.txt",
+        "sha256": "8dcee96edd1747a40c64e161cf8b83c696485263b0d73fe44d9153354e7e274a",
+        "line": 7,
+        "excerpt": "School: Example State University"
+      },
+      "confidence": 0.99,
+      "verified": false
+    },
+    {
+      "fixture": "ml",
+      "key": "degree",
+      "value": "Bachelor of Science",
+      "expected": "Bachelor of Science",
+      "correct": true,
+      "source": {
+        "kind": "resume",
+        "name": "ml.txt",
+        "sha256": "8dcee96edd1747a40c64e161cf8b83c696485263b0d73fe44d9153354e7e274a",
+        "line": 8,
+        "excerpt": "Degree: Bachelor of Science"
+      },
+      "confidence": 0.99,
+      "verified": false
+    },
+    {
+      "fixture": "ml",
+      "key": "graduation",
+      "value": "May 2028",
+      "expected": "May 2028",
+      "correct": true,
+      "source": {
+        "kind": "resume",
+        "name": "ml.txt",
+        "sha256": "8dcee96edd1747a40c64e161cf8b83c696485263b0d73fe44d9153354e7e274a",
+        "line": 9,
+        "excerpt": "Graduation: May 2028"
+      },
+      "confidence": 0.99,
+      "verified": false
+    },
+    {
+      "fixture": "unlabeled",
+      "key": "email",
+      "value": "alex@example.invalid",
+      "expected": "alex@example.invalid",
+      "correct": true,
+      "source": {
+        "kind": "resume",
+        "name": "unlabeled.txt",
+        "sha256": "5671c7ae7f0534a813521f0a4781b4d667b3002637eb8965378297f97967017d",
+        "line": 2,
+        "excerpt": "alex@example.invalid | +1 202-555-0104 | https://github.com/example-alex"
+      },
+      "confidence": 0.97,
+      "verified": false
+    },
+    {
+      "fixture": "unlabeled",
+      "key": "github",
+      "value": "https://github.com/example-alex",
+      "expected": "https://github.com/example-alex",
+      "correct": true,
+      "source": {
+        "kind": "resume",
+        "name": "unlabeled.txt",
+        "sha256": "5671c7ae7f0534a813521f0a4781b4d667b3002637eb8965378297f97967017d",
+        "line": 2,
+        "excerpt": "alex@example.invalid | +1 202-555-0104 | https://github.com/example-alex"
+      },
+      "confidence": 0.97,
+      "verified": false
+    },
+    {
+      "fixture": "unlabeled",
+      "key": "phone",
+      "value": "+1 202-555-0104",
+      "expected": "+1 202-555-0104",
+      "correct": true,
+      "source": {
+        "kind": "resume",
+        "name": "unlabeled.txt",
+        "sha256": "5671c7ae7f0534a813521f0a4781b4d667b3002637eb8965378297f97967017d",
+        "line": 2,
+        "excerpt": "alex@example.invalid | +1 202-555-0104 | https://github.com/example-alex"
+      },
+      "confidence": 0.88,
+      "verified": false
+    },
+    {
+      "fixture": "unlabeled",
+      "key": "linkedin",
+      "value": "https://www.linkedin.com/in/alex-example",
+      "expected": "https://www.linkedin.com/in/alex-example",
+      "correct": true,
+      "source": {
+        "kind": "resume",
+        "name": "unlabeled.txt",
+        "sha256": "5671c7ae7f0534a813521f0a4781b4d667b3002637eb8965378297f97967017d",
+        "line": 3,
+        "excerpt": "https://www.linkedin.com/in/alex-example"
+      },
+      "confidence": 0.97,
+      "verified": false
+    },
+    {
+      "fixture": "unlabeled",
+      "key": "school",
+      "value": "Example State University",
+      "expected": "Example State University",
+      "correct": true,
+      "source": {
+        "kind": "resume",
+        "name": "unlabeled.txt",
+        "sha256": "5671c7ae7f0534a813521f0a4781b4d667b3002637eb8965378297f97967017d",
+        "line": 5,
+        "excerpt": "Example State University | Austin, TX"
+      },
+      "confidence": 0.88,
+      "verified": false
+    },
+    {
+      "fixture": "unlabeled",
+      "key": "degree",
+      "value": "Bachelor of Science in Computer Science",
+      "expected": "Bachelor of Science in Computer Science",
+      "correct": true,
+      "source": {
+        "kind": "resume",
+        "name": "unlabeled.txt",
+        "sha256": "5671c7ae7f0534a813521f0a4781b4d667b3002637eb8965378297f97967017d",
+        "line": 6,
+        "excerpt": "Bachelor of Science in Computer Science | Expected May 2028"
+      },
+      "confidence": 0.88,
+      "verified": false
+    },
+    {
+      "fixture": "unlabeled",
+      "key": "graduation",
+      "value": "May 2028",
+      "expected": "May 2028",
+      "correct": true,
+      "source": {
+        "kind": "resume",
+        "name": "unlabeled.txt",
+        "sha256": "5671c7ae7f0534a813521f0a4781b4d667b3002637eb8965378297f97967017d",
+        "line": 6,
+        "excerpt": "Bachelor of Science in Computer Science | Expected May 2028"
+      },
+      "confidence": 0.9,
+      "verified": false
+    },
+    {
+      "fixture": "unlabeled",
+      "key": "fullName",
+      "value": "Alex Example",
+      "expected": "Alex Example",
+      "correct": true,
+      "source": {
+        "kind": "resume",
+        "name": "unlabeled.txt",
+        "sha256": "5671c7ae7f0534a813521f0a4781b4d667b3002637eb8965378297f97967017d",
+        "line": 1,
+        "excerpt": "Alex Example"
+      },
+      "confidence": 0.7,
+      "verified": false
+    }
+  ]
+}
