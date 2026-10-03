@@ -2,6 +2,8 @@ __pycache__/
 *.pyc
 .venv/
 node_modules/
+vendor-downloads/
+artifacts/
 private/
 *.log
 .env*

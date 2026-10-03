@@ -18,8 +18,24 @@ jobs:
           node-version: '24'
       - run: python -m pip install -r requirements-optional.txt
       - run: python -m playwright install --with-deps chromium
-      - run: node --test tests/core.test.mjs
+      - run: npm ci --ignore-scripts
+      - run: npm audit --audit-level=low
+      - run: npm run build:parsers
+      - run: git diff --exit-code -- extension/vendor
+      - run: python tools/verify_assets.py
+      - run: node --test tests/*.test.mjs
       - run: python -m unittest discover -s tests -p 'test_*.py' -v
       - run: node tests/evaluate.mjs && node tests/parser_evaluate.mjs
       - run: python tests/browser_check.py
       - run: python tests/demo_check.py
+      - run: python tools/package_extension.py
+      - run: python tests/extension_check.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: formproof-extension-and-verification
+          path: |
+            artifacts/formproof-0.2.0.zip
+            artifacts/package-manifest.json
+            results/extension-verification.json
+            results/extension-destination-preview.png
+            results/extension-filled-ats.png

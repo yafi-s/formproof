@@ -1,0 +1,37 @@
+7 local demo checks passed
+127.0.0.1 - - [02/Oct/2026 22:51:59] "GET / HTTP/1.1" 302 -
+127.0.0.1 - - [02/Oct/2026 22:51:59] "GET /demo/index.html HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 22:51:59] "GET /demo/demo.js HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 22:51:59] "GET /demo/demo.css HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 22:51:59] "GET /extension/popup.html HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 22:51:59] "GET /fixtures/pages/native-contact.html HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 22:51:59] "GET /extension/popup.css HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 22:51:59] "GET /demo/bridge.js HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 22:51:59] "GET /extension/popup.js HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 22:51:59] "GET /extension/core.js HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 22:51:59] "GET /extension/vault.js HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 22:51:59] "GET /extension/upload.js HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 22:51:59] "GET /extension/page.js HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 22:52:00] code 404, message Not Found
+127.0.0.1 - - [02/Oct/2026 22:52:00] "GET /README.md HTTP/1.1" 404 -
+127.0.0.1 - - [02/Oct/2026 22:52:00] code 404, message Not Found
+127.0.0.1 - - [02/Oct/2026 22:52:00] "GET /tools/import_resume.py HTTP/1.1" 404 -
+127.0.0.1 - - [02/Oct/2026 22:52:00] code 405, message The demo accepts no uploads or submissions
+127.0.0.1 - - [02/Oct/2026 22:52:00] "POST /upload HTTP/1.1" 405 -
+127.0.0.1 - - [02/Oct/2026 22:52:00] code 404, message Not Found
+127.0.0.1 - - [02/Oct/2026 22:52:00] "GET /extension/%2e%2e/README.md HTTP/1.1" 404 -
+127.0.0.1 - - [02/Oct/2026 22:52:00] code 404, message Not Found
+127.0.0.1 - - [02/Oct/2026 22:52:00] "HEAD /extension/%2e%2e/README.md HTTP/1.1" 404 -
+127.0.0.1 - - [02/Oct/2026 22:52:00] code 404, message Not Found
+127.0.0.1 - - [02/Oct/2026 22:52:00] "GET /extension/%2e%2e/tools/import_resume.py HTTP/1.1" 404 -
+127.0.0.1 - - [02/Oct/2026 22:52:00] code 404, message Not Found
+127.0.0.1 - - [02/Oct/2026 22:52:00] "HEAD /extension/%2e%2e/tools/import_resume.py HTTP/1.1" 404 -
+127.0.0.1 - - [02/Oct/2026 22:52:00] code 404, message Not Found
+127.0.0.1 - - [02/Oct/2026 22:52:00] "GET /demo/%2e%2e%2fREADME.md HTTP/1.1" 404 -
+127.0.0.1 - - [02/Oct/2026 22:52:00] code 404, message Not Found
+127.0.0.1 - - [02/Oct/2026 22:52:00] "HEAD /demo/%2e%2e%2fREADME.md HTTP/1.1" 404 -
+127.0.0.1 - - [02/Oct/2026 22:52:00] code 404, message Not Found
+127.0.0.1 - - [02/Oct/2026 22:52:00] "GET /tools/import_resume.py HTTP/1.1" 404 -
+127.0.0.1 - - [02/Oct/2026 22:52:00] code 404, message Not Found
+127.0.0.1 - - [02/Oct/2026 22:52:00] "HEAD /tools/import_resume.py HTTP/1.1" 404 -
+127.0.0.1 - - [02/Oct/2026 22:52:00] "HEAD /extension/popup.html HTTP/1.1" 200 -

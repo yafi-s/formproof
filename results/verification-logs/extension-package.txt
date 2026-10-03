@@ -1,0 +1,1 @@
+{"schema": "formproof.package.v1", "version": "0.2.0", "zip": "formproof-0.2.0.zip", "zip_bytes": 1855646, "zip_sha256": "0af5a9b0ea50f767cda930f328555406f1e315a3be5c8558fedeb40c744bfa62", "unpacked": "formproof-0.2.0-unpacked"}

@@ -1,10 +1,18 @@
 {
   "name": "formproof",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "private": true,
   "type": "module",
   "scripts": {
     "test": "node --test tests/*.test.mjs",
-    "evaluate": "node tests/evaluate.mjs"
+    "evaluate": "node tests/evaluate.mjs",
+    "build:parsers": "node tools/build_parsers.mjs",
+    "package": "python tools/package_extension.py",
+    "test:extension": "python tests/extension_check.py"
+  },
+  "devDependencies": {
+    "esbuild": "0.28.2",
+    "fflate": "0.8.3",
+    "mammoth": "1.13.0"
   }
 }

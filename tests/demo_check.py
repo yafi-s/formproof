@@ -30,7 +30,7 @@ def run():
             ui.locator('#files').set_input_files(str(ROOT/'fixtures/backend.txt'))
             ui.get_by_text('1 resume versions · revision 1').wait_for()
             for key in ('firstName','email'):
-                fact=ui.locator('#facts > .candidate').filter(has=ui.locator('strong',has_text=re.compile('^'+key+'$')))
+                fact=ui.locator('#facts > .candidate').filter(has=ui.locator(f'strong[data-key="{key}"]'))
                 fact.get_by_role('button',name='Verify & choose').click()
                 ui.get_by_text(f'1 resume versions · revision {2 if key=="firstName" else 3}').wait_for()
             ui.locator('#scan').click();ui.get_by_text('Review every proposed answer, then fill once.').wait_for()
@@ -39,7 +39,7 @@ def run():
             assert ats.locator('[name="email"]').input_value()=='alex@example.invalid'
             assert page.evaluate('document.querySelector("#application").contentWindow.submitCount')==0
             checks.append('real loopback demo server: import/verify/scan/fill writes only the controlled iframe')
-            ui.locator('summary').click();ui.locator('#factKey').select_option('gender')
+            ui.locator('#manualFact > summary').click();ui.locator('#factKey').select_option('gender')
             ui.locator('#factValue').fill('<img src=x onerror="window.xss=true">')
             ui.locator('#saveFact').click();ui.get_by_text('Saved your explicit answer locally.').wait_for()
             assert ui.locator('#facts img').count()==0
@@ -61,7 +61,7 @@ def run():
             manifest=json.loads((ROOT/'extension/manifest.json').read_text())
             assert set(manifest['permissions'])=={'activeTab','scripting','storage'}
             assert not manifest.get('host_permissions') and not manifest.get('content_scripts')
-            assert "connect-src 'none'" in manifest['content_security_policy']['extension_pages']
+            assert "connect-src 'self'" in manifest['content_security_policy']['extension_pages']
             checks.append('manifest has minimal user-invoked permissions and no network endpoint access')
             page.screenshot(path=str(ROOT/'results/local-demo.png'),full_page=True)
             page.evaluate('() => {document.querySelector("#copilot").contentWindow.chrome.storage.local.set=async()=>{throw new Error("Synthetic storage quota failure")};}')

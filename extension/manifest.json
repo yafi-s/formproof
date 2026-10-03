@@ -1,9 +1,11 @@
 {
   "manifest_version": 3,
   "name": "FormProof — Local Application Copilot",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Review source-backed resume facts and proposed fills locally. Never submits forms.",
   "permissions": ["activeTab", "scripting", "storage"],
-  "action": {"default_popup": "popup.html", "default_title": "Review with FormProof"},
-  "content_security_policy": {"extension_pages": "script-src 'self'; object-src 'none'; connect-src 'none'"}
+  "background": {"service_worker": "background.js"},
+  "action": {"default_title": "Open FormProof for this application"},
+  "commands": {"_execute_action": {"suggested_key": {"default": "Alt+Shift+F"}}},
+  "content_security_policy": {"extension_pages": "script-src 'self'; object-src 'none'; connect-src 'self'; worker-src 'self'"}
 }

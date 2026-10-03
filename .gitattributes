@@ -1,0 +1,5 @@
+# Vendored bytes are hashed exactly, including upstream license line endings.
+extension/vendor/** -text
+*.pdf -text
+*.docx -text
+*.png -text

@@ -1,0 +1,1 @@
+{"total":64,"supported":36,"proposed":36,"correct":36,"precision":1,"recall":1,"abstention_rate":0.4375,"required_corrections":0}

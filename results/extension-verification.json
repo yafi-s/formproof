@@ -1,0 +1,79 @@
+{
+  "schema": "formproof.installed-extension.v1",
+  "scope": "actual packaged extension; new isolated profile; synthetic localhost ATS only",
+  "browser": "148.0.7778.96",
+  "version": "0.2.0",
+  "package_sha256": "0af5a9b0ea50f767cda930f328555406f1e315a3be5c8558fedeb40c744bfa62",
+  "checks": [
+    "installed folder matches every file in the package hash inventory",
+    "real installed toolbar action opens persistent workspace with an actual activeTab grant",
+    "PDF upload extracts two pages with source provenance; unverified proposals cannot fill",
+    "DOCX uploads directly and keeps a separate source version",
+    "scanned, encrypted, damaged, unsafe ZIP and legacy files fail with actionable errors and no partial import",
+    "a malformed second file rolls back the entire staged multi-file import",
+    "a supported-files batch exceeding the total vault budget leaves both live and durable profiles unchanged",
+    "contact/native-select fill updates reactive state, preserves answers and skips hidden/disabled/files/narrative controls without submitting",
+    "successful fill consumes the preview; another fill requires inspection",
+    "second-step month/date/native-radio fill needs fresh review and separate explicit sensitive consent",
+    "actual browser local storage contains an encrypted envelope; session storage carries only tab/window IDs",
+    "a second review window cannot unlock a stale competing profile",
+    "changed destinations, existing answers and newly invisible ancestors stop the entire stale fill",
+    "changed date bounds invalidate a preview before any ordinary field is written",
+    "disabled optgroup inheritance prevents an option proposal and invalidates newly disabled previews",
+    "an input event changing the form destination stops all subsequent writes",
+    "cross-origin navigation cannot reuse the old activeTab grant; the toolbar reauthorizes the new destination",
+    "CSP blocks remote fetch before any network request; all observed HTTP requests were synthetic localhost assets",
+    "lock removes displayed plaintext; a wrong passphrase fails; the correct passphrase restores verified facts",
+    "unlabeled full-name resumes require explicit name-part confirmation; manual values keep user-entry provenance",
+    "actual installed delayed PDF upload cannot recreate a deleted vault or restore plaintext"
+  ],
+  "parser_timings": [
+    {
+      "fixture": "uploads/synthetic-backend.pdf",
+      "elapsed_ms": 213.98,
+      "status": "Imported. Verify each proposed fact before reuse."
+    },
+    {
+      "fixture": "uploads/synthetic-backend.docx",
+      "elapsed_ms": 108.54,
+      "status": "Imported. Verify each proposed fact before reuse."
+    },
+    {
+      "fixture": "uploads/textless.pdf",
+      "elapsed_ms": 216.43,
+      "status": "No PDF text layer found. Scanned resumes need local OCR or a text/DOCX export."
+    },
+    {
+      "fixture": "uploads/encrypted.pdf",
+      "elapsed_ms": 104.45,
+      "status": "Password-protected PDFs are unsupported"
+    },
+    {
+      "fixture": "uploads/damaged.pdf",
+      "elapsed_ms": 104.4,
+      "status": "PDF could not be read; encrypted or damaged files are unsupported"
+    },
+    {
+      "fixture": "uploads/unsafe-path.docx",
+      "elapsed_ms": 43.51,
+      "status": "Unsafe DOCX archive path"
+    },
+    {
+      "fixture": "uploads/unsupported.doc",
+      "elapsed_ms": 13.47,
+      "status": "Use PDF, DOCX, UTF-8 TXT/Markdown, or a local importer JSON bundle. Legacy DOC and images are unsupported."
+    },
+    {
+      "fixture": "unlabeled.txt",
+      "elapsed_ms": 47.16,
+      "status": "Imported. Verify each proposed fact before reuse."
+    }
+  ],
+  "http_requests": 20,
+  "page_errors": [],
+  "limitations": [
+    "Chromium automation, not a manual Chrome/Edge install",
+    "No real employer ATS tested",
+    "No scanned OCR/custom widgets/iframes/shadow DOM/attachment/submission"
+  ]
+}

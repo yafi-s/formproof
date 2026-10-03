@@ -1,6 +1,6 @@
 {
   "schema": "formproof.parser-evaluation.v1",
-  "timestamp": "2026-10-03T02:20:10.945Z",
+  "timestamp": "2026-10-03T03:51:24.571Z",
   "scope": "three original synthetic English text resumes; two labeled and one conventional section layout; no real resume benchmark",
   "expected": 31,
   "proposed": 31,
@@ -20,7 +20,8 @@
         "name": "backend.txt",
         "sha256": "de487b1ae5bd73932d58234a23b10cd929108538e1c3544e0002beeeebbf8bf0",
         "line": 1,
-        "excerpt": "Name: Alex Example"
+        "excerpt": "Name: Alex Example",
+        "page": null
       },
       "confidence": 0.99,
       "verified": false
@@ -36,7 +37,8 @@
         "name": "backend.txt",
         "sha256": "de487b1ae5bd73932d58234a23b10cd929108538e1c3544e0002beeeebbf8bf0",
         "line": 2,
-        "excerpt": "First Name: Alex"
+        "excerpt": "First Name: Alex",
+        "page": null
       },
       "confidence": 0.99,
       "verified": false
@@ -52,7 +54,8 @@
         "name": "backend.txt",
         "sha256": "de487b1ae5bd73932d58234a23b10cd929108538e1c3544e0002beeeebbf8bf0",
         "line": 3,
-        "excerpt": "Last Name: Example"
+        "excerpt": "Last Name: Example",
+        "page": null
       },
       "confidence": 0.99,
       "verified": false
@@ -68,7 +71,8 @@
         "name": "backend.txt",
         "sha256": "de487b1ae5bd73932d58234a23b10cd929108538e1c3544e0002beeeebbf8bf0",
         "line": 4,
-        "excerpt": "Email: alex@example.invalid"
+        "excerpt": "Email: alex@example.invalid",
+        "page": null
       },
       "confidence": 0.99,
       "verified": false
@@ -84,7 +88,8 @@
         "name": "backend.txt",
         "sha256": "de487b1ae5bd73932d58234a23b10cd929108538e1c3544e0002beeeebbf8bf0",
         "line": 5,
-        "excerpt": "Phone: +1 202 555 0104"
+        "excerpt": "Phone: +1 202 555 0104",
+        "page": null
       },
       "confidence": 0.99,
       "verified": false
@@ -100,7 +105,8 @@
         "name": "backend.txt",
         "sha256": "de487b1ae5bd73932d58234a23b10cd929108538e1c3544e0002beeeebbf8bf0",
         "line": 6,
-        "excerpt": "City: Austin"
+        "excerpt": "City: Austin",
+        "page": null
       },
       "confidence": 0.99,
       "verified": false
@@ -116,7 +122,8 @@
         "name": "backend.txt",
         "sha256": "de487b1ae5bd73932d58234a23b10cd929108538e1c3544e0002beeeebbf8bf0",
         "line": 7,
-        "excerpt": "LinkedIn: https://www.linkedin.com/in/alex-example"
+        "excerpt": "LinkedIn: https://www.linkedin.com/in/alex-example",
+        "page": null
       },
       "confidence": 0.99,
       "verified": false
@@ -132,7 +139,8 @@
         "name": "backend.txt",
         "sha256": "de487b1ae5bd73932d58234a23b10cd929108538e1c3544e0002beeeebbf8bf0",
         "line": 8,
-        "excerpt": "GitHub: https://github.com/example-alex"
+        "excerpt": "GitHub: https://github.com/example-alex",
+        "page": null
       },
       "confidence": 0.99,
       "verified": false
@@ -148,7 +156,8 @@
         "name": "backend.txt",
         "sha256": "de487b1ae5bd73932d58234a23b10cd929108538e1c3544e0002beeeebbf8bf0",
         "line": 9,
-        "excerpt": "Website: https://example.invalid/alex"
+        "excerpt": "Website: https://example.invalid/alex",
+        "page": null
       },
       "confidence": 0.99,
       "verified": false
@@ -164,7 +173,8 @@
         "name": "backend.txt",
         "sha256": "de487b1ae5bd73932d58234a23b10cd929108538e1c3544e0002beeeebbf8bf0",
         "line": 10,
-        "excerpt": "School: Example State University"
+        "excerpt": "School: Example State University",
+        "page": null
       },
       "confidence": 0.99,
       "verified": false
@@ -180,7 +190,8 @@
         "name": "backend.txt",
         "sha256": "de487b1ae5bd73932d58234a23b10cd929108538e1c3544e0002beeeebbf8bf0",
         "line": 11,
-        "excerpt": "Degree: Bachelor of Science"
+        "excerpt": "Degree: Bachelor of Science",
+        "page": null
       },
       "confidence": 0.99,
       "verified": false
@@ -196,7 +207,8 @@
         "name": "backend.txt",
         "sha256": "de487b1ae5bd73932d58234a23b10cd929108538e1c3544e0002beeeebbf8bf0",
         "line": 12,
-        "excerpt": "Graduation: May 2028"
+        "excerpt": "Graduation: May 2028",
+        "page": null
       },
       "confidence": 0.99,
       "verified": false
@@ -212,7 +224,8 @@
         "name": "backend.txt",
         "sha256": "de487b1ae5bd73932d58234a23b10cd929108538e1c3544e0002beeeebbf8bf0",
         "line": 13,
-        "excerpt": "Current Employer: Example Labs"
+        "excerpt": "Current Employer: Example Labs",
+        "page": null
       },
       "confidence": 0.99,
       "verified": false
@@ -228,7 +241,8 @@
         "name": "backend.txt",
         "sha256": "de487b1ae5bd73932d58234a23b10cd929108538e1c3544e0002beeeebbf8bf0",
         "line": 14,
-        "excerpt": "Current Title: Software Engineering Intern"
+        "excerpt": "Current Title: Software Engineering Intern",
+        "page": null
       },
       "confidence": 0.99,
       "verified": false
@@ -244,7 +258,8 @@
         "name": "ml.txt",
         "sha256": "8dcee96edd1747a40c64e161cf8b83c696485263b0d73fe44d9153354e7e274a",
         "line": 1,
-        "excerpt": "Name: Alex Example"
+        "excerpt": "Name: Alex Example",
+        "page": null
       },
       "confidence": 0.99,
       "verified": false
@@ -260,7 +275,8 @@
         "name": "ml.txt",
         "sha256": "8dcee96edd1747a40c64e161cf8b83c696485263b0d73fe44d9153354e7e274a",
         "line": 2,
-        "excerpt": "First Name: Alex"
+        "excerpt": "First Name: Alex",
+        "page": null
       },
       "confidence": 0.99,
       "verified": false
@@ -276,7 +292,8 @@
         "name": "ml.txt",
         "sha256": "8dcee96edd1747a40c64e161cf8b83c696485263b0d73fe44d9153354e7e274a",
         "line": 3,
-        "excerpt": "Last Name: Example"
+        "excerpt": "Last Name: Example",
+        "page": null
       },
       "confidence": 0.99,
       "verified": false
@@ -292,7 +309,8 @@
         "name": "ml.txt",
         "sha256": "8dcee96edd1747a40c64e161cf8b83c696485263b0d73fe44d9153354e7e274a",
         "line": 4,
-        "excerpt": "Email: alex.ml@example.invalid"
+        "excerpt": "Email: alex.ml@example.invalid",
+        "page": null
       },
       "confidence": 0.99,
       "verified": false
@@ -308,7 +326,8 @@
         "name": "ml.txt",
         "sha256": "8dcee96edd1747a40c64e161cf8b83c696485263b0d73fe44d9153354e7e274a",
         "line": 5,
-        "excerpt": "Phone: +1 202 555 0104"
+        "excerpt": "Phone: +1 202 555 0104",
+        "page": null
       },
       "confidence": 0.99,
       "verified": false
@@ -324,7 +343,8 @@
         "name": "ml.txt",
         "sha256": "8dcee96edd1747a40c64e161cf8b83c696485263b0d73fe44d9153354e7e274a",
         "line": 6,
-        "excerpt": "City: Austin"
+        "excerpt": "City: Austin",
+        "page": null
       },
       "confidence": 0.99,
       "verified": false
@@ -340,7 +360,8 @@
         "name": "ml.txt",
         "sha256": "8dcee96edd1747a40c64e161cf8b83c696485263b0d73fe44d9153354e7e274a",
         "line": 7,
-        "excerpt": "School: Example State University"
+        "excerpt": "School: Example State University",
+        "page": null
       },
       "confidence": 0.99,
       "verified": false
@@ -356,7 +377,8 @@
         "name": "ml.txt",
         "sha256": "8dcee96edd1747a40c64e161cf8b83c696485263b0d73fe44d9153354e7e274a",
         "line": 8,
-        "excerpt": "Degree: Bachelor of Science"
+        "excerpt": "Degree: Bachelor of Science",
+        "page": null
       },
       "confidence": 0.99,
       "verified": false
@@ -372,7 +394,8 @@
         "name": "ml.txt",
         "sha256": "8dcee96edd1747a40c64e161cf8b83c696485263b0d73fe44d9153354e7e274a",
         "line": 9,
-        "excerpt": "Graduation: May 2028"
+        "excerpt": "Graduation: May 2028",
+        "page": null
       },
       "confidence": 0.99,
       "verified": false
@@ -388,7 +411,8 @@
         "name": "unlabeled.txt",
         "sha256": "5671c7ae7f0534a813521f0a4781b4d667b3002637eb8965378297f97967017d",
         "line": 2,
-        "excerpt": "alex@example.invalid | +1 202-555-0104 | https://github.com/example-alex"
+        "excerpt": "alex@example.invalid | +1 202-555-0104 | https://github.com/example-alex",
+        "page": null
       },
       "confidence": 0.97,
       "verified": false
@@ -404,7 +428,8 @@
         "name": "unlabeled.txt",
         "sha256": "5671c7ae7f0534a813521f0a4781b4d667b3002637eb8965378297f97967017d",
         "line": 2,
-        "excerpt": "alex@example.invalid | +1 202-555-0104 | https://github.com/example-alex"
+        "excerpt": "alex@example.invalid | +1 202-555-0104 | https://github.com/example-alex",
+        "page": null
       },
       "confidence": 0.97,
       "verified": false
@@ -420,7 +445,8 @@
         "name": "unlabeled.txt",
         "sha256": "5671c7ae7f0534a813521f0a4781b4d667b3002637eb8965378297f97967017d",
         "line": 2,
-        "excerpt": "alex@example.invalid | +1 202-555-0104 | https://github.com/example-alex"
+        "excerpt": "alex@example.invalid | +1 202-555-0104 | https://github.com/example-alex",
+        "page": null
       },
       "confidence": 0.88,
       "verified": false
@@ -436,7 +462,8 @@
         "name": "unlabeled.txt",
         "sha256": "5671c7ae7f0534a813521f0a4781b4d667b3002637eb8965378297f97967017d",
         "line": 3,
-        "excerpt": "https://www.linkedin.com/in/alex-example"
+        "excerpt": "https://www.linkedin.com/in/alex-example",
+        "page": null
       },
       "confidence": 0.97,
       "verified": false
@@ -452,7 +479,8 @@
         "name": "unlabeled.txt",
         "sha256": "5671c7ae7f0534a813521f0a4781b4d667b3002637eb8965378297f97967017d",
         "line": 5,
-        "excerpt": "Example State University | Austin, TX"
+        "excerpt": "Example State University | Austin, TX",
+        "page": null
       },
       "confidence": 0.88,
       "verified": false
@@ -468,7 +496,8 @@
         "name": "unlabeled.txt",
         "sha256": "5671c7ae7f0534a813521f0a4781b4d667b3002637eb8965378297f97967017d",
         "line": 6,
-        "excerpt": "Bachelor of Science in Computer Science | Expected May 2028"
+        "excerpt": "Bachelor of Science in Computer Science | Expected May 2028",
+        "page": null
       },
       "confidence": 0.88,
       "verified": false
@@ -484,7 +513,8 @@
         "name": "unlabeled.txt",
         "sha256": "5671c7ae7f0534a813521f0a4781b4d667b3002637eb8965378297f97967017d",
         "line": 6,
-        "excerpt": "Bachelor of Science in Computer Science | Expected May 2028"
+        "excerpt": "Bachelor of Science in Computer Science | Expected May 2028",
+        "page": null
       },
       "confidence": 0.9,
       "verified": false
@@ -500,7 +530,8 @@
         "name": "unlabeled.txt",
         "sha256": "5671c7ae7f0534a813521f0a4781b4d667b3002637eb8965378297f97967017d",
         "line": 1,
-        "excerpt": "Alex Example"
+        "excerpt": "Alex Example",
+        "page": null
       },
       "confidence": 0.7,
       "verified": false

@@ -1,0 +1,24 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><title>Synthetic application — FormProof test</title>
+<style>body{font:16px system-ui;max-width:780px;margin:32px auto;padding:16px;color:#17263a;background:#f4f7fb}form{background:white;border:1px solid #cbd5e1;border-radius:16px;padding:24px}label{display:block;margin:14px 0}input,select,textarea,button{font:inherit;padding:9px;border:1px solid #94a3b8;border-radius:6px}input:not([type=radio]):not([type=checkbox]),select,textarea{display:block;width:90%}fieldset{margin:16px 0}fieldset label{display:inline-block;margin-right:16px}[hidden]{display:none}</style>
+<h1>Example Labs · Backend engineer</h1><p>Original fabricated ATS fixture. Nothing is sent. Native controls and reactive field state.</p>
+<form action="/never-submit" id="application"><section id="step1">
+<label>First name<input name="first_name" autocomplete="given-name"></label>
+<label>Last name<input name="last_name" autocomplete="family-name"></label>
+<label>Email<input name="email" type="email" autocomplete="email"></label>
+<label>Phone number<input name="phone" type="tel"></label>
+<label>City<select name="city"><option value="">Choose</option><option value="aus">Austin</option><option value="ny">New York</option></select></label>
+<label>Portfolio URL<input name="portfolio" type="url" value="https://preserved.example.invalid"></label>
+<label>Upload resume<input type="file" name="resume"></label>
+<label>Why should we hire you?<textarea name="essay"></textarea></label>
+<label><input type="checkbox" name="terms">Agree to terms</label>
+<div hidden><label>Email<input name="honeypot_email"></label></div>
+<fieldset disabled><label>Email<input name="disabled_email"></label></fieldset>
+<button type="button" id="next">Continue to education</button></section>
+<section id="step2" hidden><h2>Education and optional answers</h2>
+<label>School<input name="school"></label><label>Degree<select name="degree"><option value="">Choose</option><option value="bs">Bachelor of Science</option><option value="ms">Master of Science</option></select></label>
+<label>Graduation date<input name="graduation" type="month" min="2020-01" max="2035-12"></label>
+<label>Date of birth<input name="birth_date" type="date" min="1900-01-01" max="2020-12-31"></label>
+<fieldset><legend>Gender</legend><label><input type="radio" name="gender" value="decline">Prefer not to say</label><label><input type="radio" name="gender" value="other">Other</label></fieldset>
+<label>GitHub URL<input name="github" type="url"></label>
+<button type="submit">Submit application</button></section></form>
+<p id="events">No input events yet</p><script src="extension-ats.js"></script></html>

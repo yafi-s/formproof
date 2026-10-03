@@ -23,7 +23,7 @@ export function parseResume(text, source) {
   const add = (key, value, line, confidence = 0.99) => {
     if (value && !SENSITIVE.has(key)) facts.push({key, value: value.trim(), confidence,
       source: {kind: 'resume', name: source.name, sha256: source.sha256, line: line + 1,
-        excerpt: lines[line].slice(0, 600)}});
+        excerpt: lines[line].slice(0, 600),page:source.linePages?.[line]??null}});
   };
   const labels = {
     name: 'fullName', 'full name': 'fullName', 'first name': 'firstName', 'last name': 'lastName',
@@ -181,6 +181,22 @@ export function classifyField(field) {
 }
 
 export function optionValue(field, value) {
+  if(['date','month'].includes(field.kind)){
+    let formatted=String(value).trim();
+    if(field.kind==='month'){
+      const months=['january','february','march','april','may','june','july','august','september','october','november','december'];
+      const match=normalize(value).match(/^([a-z]+) (\d{4})$/);
+      if(match&&months.includes(match[1]))formatted=`${match[2]}-${String(months.indexOf(match[1])+1).padStart(2,'0')}`;
+    }
+    const match=formatted.match(field.kind==='date'?/^(\d{4})-(\d{2})-(\d{2})$/:/^(\d{4})-(\d{2})$/);
+    if(!match)return {reason:field.kind==='date'?'needs an exact YYYY-MM-DD date; no day is inferred':'needs an exact month and year'};
+    const year=Number(match[1]),month=Number(match[2]),day=Number(match[3]??1),
+      days=[31,year%4===0&&(year%100!==0||year%400===0)?29:28,31,30,31,30,31,31,30,31,30,31];
+    if(!year||month<1||month>12||day<1||day>days[month-1])return {reason:'invalid calendar date'};
+    if(field.min&&formatted<field.min||field.max&&formatted>field.max)return {reason:'date is outside form bounds'};
+    if(field.step&&!['1','any'].includes(field.step))return {reason:'nonstandard date increments remain manual'};
+    return {value:formatted};
+  }
   if (!['select', 'radio'].includes(field.kind)) return {value};
   const hits = field.options.filter(o => !o.disabled && o.value !== '' &&
     (normalize(o.label) === normalize(value) || normalize(o.value) === normalize(value)));
@@ -202,7 +218,7 @@ export function buildPlan(profile, snapshot) {
     const option = optionValue(field, state.candidate.value);
     if (option.reason) return {...base, key: mapping.key, reason: option.reason};
     return {...base, key: mapping.key, status: mapping.sensitive ? 'sensitive-review' : 'review',
-      value: option.value, displayValue: state.candidate.value, confidence: mapping.confidence,
+      value: option.value, displayValue: ['date','month'].includes(field.kind)?option.value:state.candidate.value, confidence: mapping.confidence,
       source: state.candidate.source, sensitive: mapping.sensitive};
   });
   return {profileRevision: profile.revision, nonce: snapshot.nonce, url: snapshot.url,

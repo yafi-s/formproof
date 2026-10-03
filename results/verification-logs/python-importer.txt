@@ -1,0 +1,9 @@
+test_multpage_pdf_text_layer (test_importer.ImporterTests.test_multpage_pdf_text_layer) ... ok
+test_scanned_pdf_abstains (test_importer.ImporterTests.test_scanned_pdf_abstains) ... ok
+test_text_provenance (test_importer.ImporterTests.test_text_provenance) ... ok
+test_unsupported_format_and_invalid_utf8 (test_importer.ImporterTests.test_unsupported_format_and_invalid_utf8) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.249s
+
+OK

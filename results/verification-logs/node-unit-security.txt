@@ -1,0 +1,43 @@
+✔ resume proposals preserve hash, exact source line and unverified state (3.7328ms)
+✔ importing identical content is idempotent (0.6224ms)
+✔ conflicting imports invalidate previously selected facts (2.1144ms)
+✔ explicit conflict resolution records a verified source choice (0.6101ms)
+✔ same normalized value across versions does not revoke verification (0.5819ms)
+✔ resume parser never derives demographic or citizenship facts (0.8806ms)
+✔ unlabeled name is a low-confidence unverified proposal (0.3938ms)
+✔ standard unlabeled contact and explicit education sections produce source-backed proposals (1.1771ms)
+✔ employment dates cannot become graduation dates and prototype-like labels are inert (0.2599ms)
+✔ unsupported user fact keys and empty values are rejected (0.6161ms)
+✔ deleting a resume removes sourced facts and selection (0.6522ms)
+✔ deleting sensitive answer removes all retained candidates (0.194ms)
+✔ job matching is explainable and ties abstain (10.7783ms)
+✔ label/autocomplete contradiction abstains (1.2715ms)
+✔ unknown sensitive wording cannot use ordinary autocomplete fallback (0.1906ms)
+✔ narrative questions and inferred years of experience abstain (0.2591ms)
+✔ unlabeled standard autocomplete can propose verified contact facts (0.3218ms)
+✔ select mapping requires a unique exact option (0.3012ms)
+✔ missing select option abstains rather than taking closest label (0.2183ms)
+✔ existing and unsupported fields never receive a proposal (0.2906ms)
+✔ sensitive approval is explicit and destination scoped (0.5647ms)
+✔ profile changes invalidate previously reviewed plans (0.2079ms)
+✔ abstention cannot be manually approved as a generated answer (0.159ms)
+✔ unknown approval field ids fail closed (0.3669ms)
+✔ vault encrypts every fact and refuses wrong passphrases or tampering (145.6478ms)
+✔ vault uses unique salts/IVs and validates format and passphrase length (68.6061ms)
+✔ DOCX validates actual bytes and rejects unsafe entry names (8.5616ms)
+✔ DOCX rejects forged inflated lengths and corrupt CRCs before extraction (27.1929ms)
+✔ DOCX refuses declared size bombs, truncation and missing document content (50.8964ms)
+✔ text upload keeps original digest and source; every proposed fact stays unverified (9.4042ms)
+✔ upload rejects invalid UTF-8, empty, oversized, unsupported and cancelled files (2.7822ms)
+✔ PDF provenance maps a source line to its actual extracted page (0.2013ms)
+✔ month conversion never guesses a date and validates leap years and bounds (0.5ms)
+✔ exact birth date remains a sensitive explicit-answer field (0.7358ms)
+✔ serialized UTF-8 vault admission bounds ciphertext before encryption (12.8828ms)
+ℹ tests 35
+ℹ suites 0
+ℹ pass 35
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 334.3716
